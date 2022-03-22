@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/menu-management/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="">
+      <span class="d-none d-lg-block">EN-IMS</span>
+    </a>
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <!-- Strart Curremt Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#curremt-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-app"></i><span>현황조회</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="curremt-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="charts-chartjs.html" >
+              <i class="bi bi-circle"></i><span>가동현황</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span>운전현황</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-echarts.html">
+              <i class="bi bi-circle"></i><span>생산/공급</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End Curremt Nav -->
+
+      <!-- Start Power Nav -->
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#power-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-app"></i><span>발전소</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="power-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="icons-bootstrap.html">
+              <i class="bi bi-circle"></i><span>발전소 가동</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-remix.html">
+              <i class="bi bi-circle"></i><span>발전소 운전</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-boxicons.html">
+              <i class="bi bi-circle"></i><span>발전소 전력</span>
+            </a>
+          </li>
+          <li>
+            <a href="power-register.html" class="active">
+              <i class="bi bi-circle"></i><span>발전소 등록</span>
+            </a>
+          </li>
+          <li>
+            <a href="menu-management.html">
+              <i class="bi bi-circle"></i><span>메뉴구성 관리</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End power Nav -->
+
+      <!-- Start Electricity Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#electricity-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-app"></i><span>전력시장</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="electricity-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="icons-bootstrap.html">
+              <i class="bi bi-circle"></i><span>전력현황</span>
+            </a>
+          </li>
+          <li>
+            <a href="icons-remix.html">
+              <i class="bi bi-circle"></i><span>시장가격</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- End Electricity Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <!-- ======= Main ======= -->
+  <main id="main" class="main d-flex flex-column flex-md-row justify-content-center">
+      <!-- 메뉴구성 목록 -->
+    <section class="menu-list-container">
+        <header class="d-flex justify-content-between align-items-center">
+            <h6 style="margin: 0;">Menu Tree Manager</h6>
+            <button class="btn btn-primary">세부메뉴 등록</button>
+        </header>
+        <div class="menu-list-card card ">
+            <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>EMS(최상위 메뉴)</span>
+            <ul>
+                <span class="branch-vertical-line"></span>
+                <li>
+                    <span class="horizontal-line"></span>
+                    <a class="menu-item collapsed" data-bs-target="#depth1-child1" data-bs-toggle="collapse" href="#">
+                      <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>뎁스 1-1</span>
+                      <i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul class="collapse" id="depth1-child1">
+                        <span class="branch-vertical-line"></span>
+                        <li>
+                            <span class="horizontal-line"></span>
+                            <a class="menu-item collapsed" data-bs-target="#depth2-child1" data-bs-toggle="collapse" href="#">
+                                <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>뎁스 2-1</span>
+                                <i class="bi bi-chevron-down ms-auto"></i>
+                            </a>
+                            <ul class="collapse" id="depth2-child1">
+                                <span class="branch-vertical-line"></span>
+                                <li>
+                                    <span class="horizontal-line"></span>
+                                    <div>
+                                        <input id="depth3-test1" type="checkbox"/>
+                                        <label for="depth3-test1">Depth 3</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="horizontal-line"></span>
+                                    <div>
+                                        <input id="depth3-test2" type="checkbox" />
+                                        <label for="depth3-test2">Depth 3</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="horizontal-line"></span>
+                                    <div>
+                                        <input id="depth3-test3" type="checkbox" />
+                                        <label for="depth3-test3">Depth 3</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="horizontal-line"></span>
+                            <a class="menu-item collapsed" data-bs-target="#depth2-child2" data-bs-toggle="collapse" href="#">
+                              <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>뎁스 2-2</span>
+                              <i class="bi bi-chevron-down ms-auto"></i>
+                            </a>
+                            <ul class="collapse" id="depth2-child2">
+                                <span class="branch-vertical-line"></span>
+                                <li>
+                                    <span class="horizontal-line"></span>
+                                    <div>
+                                        <input id="depth3-test4" type="checkbox" />
+                                        <label for="depth3-test4">Depth 3</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="horizontal-line"></span>
+                                    <div>
+                                        <input id="depth3-test5" type="checkbox" />
+                                        <label for="depth3-test5">Depth 3</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="horizontal-line"></span>
+                                    <div>
+                                        <input id="depth3-test6" type="checkbox" />
+                                        <label for="depth3-test6">Depth 3</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="horizontal-line"></span>
+                    <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>Depth 1</span>
+                    <ul>
+                        <span class="branch-vertical-line"></span>
+                        <li>
+                            <span class="horizontal-line"></span>
+                            <span>Depth 2</span>
+                        </li>
+                        <li>
+                            <span class="horizontal-line"></span>
+                            <span>Depth 2</span>
+                        </li>
+                        <li>
+                            <span class="horizontal-line"></span>
+                            <span>Depth 2</span>
+                        </li>
+                    </ul>
+                </li>
+                
+                <span class="branch-vertical-line"></span>
+                <li>
+                    <span class="horizontal-line"></span>
+                    <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>뎁스 1-2</span>
+                </li>
+                <li>
+                    <span class="horizontal-line"></span>
+                    <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>뎁스 1-3</span>
+                </li>
+                <li>
+                    <span class="horizontal-line"></span>
+                    <span><i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>뎁스 1-4</span>
+                </li>
+                <li class="menu-name">
+                    <span class="horizontal-line"></span>
+                    <i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>
+                    <input type="text" class="menu-name-input rounded" placeholder="Menu Name">
+                    <ul>
+                      <span class="branch-vertical-line"></span>
+                      <li>
+                        <span class="horizontal-line"></span>
+                        <i class="bi bi-plus-square"></i><i class="bi bi-folder"></i>
+                        <input type="text" class="menu-name-input rounded" placeholder="Menu Name">
+                      </li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="branch-vertical-line"></span>
+        </div>
+    </section>
+    <!-- 세부메뉴 편집 -->
+    <section class="menu-detail-edit-container">
+      <header class="d-flex justify-content-between align-items-center">
+          <h6>Menu Editor</h6>
+      </header>
+      <div class="menu-detail-edit-card card ">
+        <ul class="card-body">
+          <li class="menu-input-box">
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01">대 메뉴<p>(LV1)</p></label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected></option>
+                <option value="1">menu1</option>
+                <option value="2">menu2</option>
+                <option value="3">menu3</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01">중 메뉴<p>(LV2)</p></label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected></option>
+                <option value="1">menu1</option>
+                <option value="2">menu2</option>
+                <option value="3">menu3</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">세부 메뉴명</span>
+              <input type="text" class="form-control" placeholder="" aria-label="menuname" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">URL 경로</span>
+              <input type="text" class="form-control" placeholder="" aria-label="menuname" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">설 명</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          </li>
+          <li class="menu-btn">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary me-md-2" type="button">삭제</button>
+              <button class="btn btn-primary" type="button">확인</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>EN-IMS</span></strong>. All Rights Reserved
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
